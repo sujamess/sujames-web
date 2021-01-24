@@ -12,19 +12,13 @@ interface ISEOProps {
 const SEO: React.FC<ISEOProps> = ({ title, description, image, children }) => {
   const router = useRouter();
 
-  const transformedTitle = useMemo(() => (
-    title
-      ? `Sujames Blog · ${title}`
-      : 'Sujames Blog'
-  ), [title]);
-
   return (
     <>
       <Head>
-        <title>{transformedTitle}</title>
+        <title>Sujames</title>
 
-        <meta name="title" content={transformedTitle} />
-        <meta name="description" content={description || 'Sujames Blogs'} />
+        <meta name="title" content="Sujames" />
+        <meta name="description" content={description || 'Sujames empire'} />
 
         <script data-ad-client={APP_CONFIG.GOOGLE.ADSENSE.CLIENT_ID} async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -32,12 +26,12 @@ const SEO: React.FC<ISEOProps> = ({ title, description, image, children }) => {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content={router.asPath} />
-        <meta property="og:title" content={transformedTitle} />
+        <meta property="og:title" content="Sujames" />
         <meta property="og:description" content={description} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={router.asPath} />
-        <meta property="twitter:title" content={transformedTitle} />
+        <meta property="twitter:title" content="Sujames" />
         <meta property="twitter:description" content={description} />
 
         <meta property="og:image" content={image} />
