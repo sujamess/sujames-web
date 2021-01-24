@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO />
-      <div className="h-full flex items-center">
+      <div className="sm:h-full my-auto flex sm:items-center py-8 sm:py-4 lg:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           <div>
             <div className="mb-8">
@@ -85,7 +85,6 @@ const IndexPage = () => {
                   <p className="text-white">My Blog</p>
                 </a>
               </div>
-              
             </div>
           </div>
         </div>
