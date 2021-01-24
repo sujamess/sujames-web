@@ -15,10 +15,10 @@ const SEO: React.FC<ISEOProps> = ({ title, description, image, children }) => {
   return (
     <>
       <Head>
-        <title>Sujames</title>
+        <title>Sujames's Empire 🔥</title>
 
-        <meta name="title" content="Sujames" />
-        <meta name="description" content={description || 'Sujames empire'} />
+        <meta name="title" content="Sujames's Empire 🔥" />
+        <meta name="description" content={description || `Sujames's Empire 🔥 eager to learn · try new things`} />
 
         <script data-ad-client={APP_CONFIG.GOOGLE.ADSENSE.CLIENT_ID} async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
